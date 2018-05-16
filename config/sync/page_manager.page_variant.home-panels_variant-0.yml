@@ -1,0 +1,68 @@
+uuid: d03a721d-eee3-4713-868d-70c01f309067
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.home
+    - views.view.featured_type_ukuleles
+    - views.view.featured_ukulele
+  content:
+    - 'block_content:basic:3aaf7d1e-294a-4d97-83c0-044a5d69a473'
+  module:
+    - block_content
+    - panels
+    - views
+id: home-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    f2d24bc6-1c70-4dd4-9d24-a2960608cfd3:
+      id: 'views_block:featured_ukulele-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: f2d24bc6-1c70-4dd4-9d24-a2960608cfd3
+      context_mapping: {  }
+    db11e7bf-3532-4ac1-8305-815b69e75c39:
+      id: 'block_content:3aaf7d1e-294a-4d97-83c0-044a5d69a473'
+      label: History
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 0
+      uuid: db11e7bf-3532-4ac1-8305-815b69e75c39
+      context_mapping: {  }
+    50e9d240-cf51-4307-be3b-576d406e80cb:
+      id: 'views_block:featured_type_ukuleles-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 50e9d240-cf51-4307-be3b-576d406e80cb
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 170bf9d0-c423-4fa3-95f9-a391fdbb08c5
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: home-panels_variant-0
+  builder: standard
+page: home
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,13 @@
+uuid: 4411df7f-296e-42a8-934b-e38d183af70e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5TqAuVTl1_arKIBeD1qDfJM-pKmaFnqyYSQNdwEK_DQ
+id: default
+label: Ukulele
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false

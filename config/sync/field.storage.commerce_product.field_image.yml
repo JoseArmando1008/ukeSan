@@ -1,0 +1,30 @@
+uuid: 5eac0e80-63b7-498b-9d05-6e58247b35f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+    - image
+id: commerce_product.field_image
+field_name: field_image
+entity_type: commerce_product
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: e50bf815-7945-49fd-affe-a757a167b222
+    alt: Ukulele
+    title: Ukulele
+    width: 201
+    height: 251
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

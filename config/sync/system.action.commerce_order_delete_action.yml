@@ -1,0 +1,16 @@
+uuid: 169d1043-98ff-4b05-b348-72f9f7f2970c
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+  module:
+    - entity
+_core:
+  default_config_hash: GDUgwBmDhcGNHBz3FBgXqXvyuMJVsKy9oytH9wNOJns
+id: commerce_order_delete_action
+label: 'Delete order'
+type: commerce_order
+plugin: 'entity_delete_action:commerce_order'
+configuration: {  }

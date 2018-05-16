@@ -22,6 +22,7 @@
         "drupal/commerce": "^2.6",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
+        "drupal/entityqueue": "^1.0@alpha",
         "drush/drush": "^9.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

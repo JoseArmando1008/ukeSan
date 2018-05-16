@@ -1,0 +1,19 @@
+uuid: 1b75b38b-1a2f-4c53-a8a3-d8f98d4fe7da
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+    - field.storage.block_content.field_title
+id: block_content.history.field_title
+field_name: field_title
+entity_type: block_content
+bundle: history
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

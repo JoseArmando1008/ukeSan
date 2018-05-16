@@ -1,0 +1,52 @@
+uuid: d707bb12-57de-4850-9874-7703f850b3e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+    - field.field.block_content.history.body
+    - field.field.block_content.history.field_image
+    - field.field.block_content.history.field_title
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.history.default
+targetEntityType: block_content
+bundle: history
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_title:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

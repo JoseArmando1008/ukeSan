@@ -1,0 +1,25 @@
+uuid: d1ccc2b9-0ec2-4c63-9580-f7eadfc2179f
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: featured_types
+label: 'Featured Types'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: taxonomy_term
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_ukulele: type_ukulele
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

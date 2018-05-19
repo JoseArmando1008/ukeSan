@@ -25,7 +25,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 0
+      weight: -1
       uuid: f2d24bc6-1c70-4dd4-9d24-a2960608cfd3
       context_mapping: {  }
     db11e7bf-3532-4ac1-8305-815b69e75c39:
@@ -48,7 +48,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 0
+      weight: 1
       uuid: 50e9d240-cf51-4307-be3b-576d406e80cb
       context_mapping: {  }
   id: panels_variant

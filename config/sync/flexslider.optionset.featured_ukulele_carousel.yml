@@ -1,0 +1,47 @@
+uuid: 0c87448f-74a0-42e9-965a-c27272394a90
+langcode: en
+status: true
+dependencies: {  }
+id: featured_ukulele_carousel
+label: 'featured ukulele carousel'
+options:
+  animation: slide
+  animationSpeed: 600
+  direction: horizontal
+  slideshow: false
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 7000
+  animationLoop: true
+  randomize: false
+  startAt: 0
+  itemWidth: 210
+  itemMargin: 5
+  minItems: 3
+  maxItems: 4
+  move: 2
+  directionNav: true
+  controlNav: '0'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: true
+  multipleKeyboard: false
+  mousewheel: false
+  touch: true
+  prevText: Previous
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: true
+  pauseOnHover: false
+  controlsContainer: ''
+  manualControls: ''

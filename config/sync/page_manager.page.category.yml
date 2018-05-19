@@ -1,0 +1,16 @@
+uuid: 4a76ce6b-d007-4478-a1dd-7edd7c112eeb
+langcode: en
+status: true
+dependencies: {  }
+id: category
+label: Category
+description: ''
+use_admin_theme: false
+path: '/taxonomy/term/{taxonomy_term}'
+access_logic: and
+access_conditions: {  }
+parameters:
+  taxonomy_term:
+    machine_name: taxonomy_term
+    type: 'entity:taxonomy_term'
+    label: 'Taxonomy term'

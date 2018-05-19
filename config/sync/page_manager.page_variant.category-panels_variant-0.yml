@@ -1,0 +1,49 @@
+uuid: 62771c7f-8156-47da-9eb6-0e239454ce08
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.category
+    - views.view.featured_type_ukuleles
+  module:
+    - ctools
+    - panels
+    - views
+id: category-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    7eb132e7-ac22-4c86-a009-651384c646df:
+      id: 'views_block:featured_type_ukuleles-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 7eb132e7-ac22-4c86-a009-651384c646df
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 074481d1-a907-4d62-92cd-607f6fc90021
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: category-panels_variant-0
+  builder: standard
+page: category
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      type_ukulele: type_ukulele
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+selection_logic: and
+static_context: {  }

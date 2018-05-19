@@ -9,6 +9,7 @@ dependencies:
     - commerce
     - commerce_product
     - entityqueue
+    - flexslider_views
     - taxonomy
 id: featured_ukulele
 label: 'Featured Ukulele'
@@ -55,11 +56,14 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: flexslider
         options:
-          row_class: ''
-          default_row_class: true
+          grouping: {  }
           uses_fields: true
+          flexslider: null
+          optionset: featured_ukulele_carousel
+          captionfield: ''
+          id: ''
       row:
         type: 'entity:commerce_product'
         options:

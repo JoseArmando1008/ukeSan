@@ -13,7 +13,7 @@ type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: e50bf815-7945-49fd-affe-a757a167b222
+    uuid: ''
     alt: Ukulele
     title: Ukulele
     width: 201

@@ -1,0 +1,22 @@
+uuid: bb110e03-f87c-4411-8166-c2d585bd012f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_paypal
+id: paypal
+label: Paypal
+weight: null
+plugin: paypal_express_checkout
+configuration:
+  api_username: ukesanapp_api1.gmail.com
+  api_password: 9XFJ6CN7MYV5NKPX
+  shipping_prompt: shipping_skip
+  signature: ARuyFUVDGNrwViXQ04GzyZkPZ0AxA3cDrHXClNzixY3j8ExyT3a-nsnq
+  solution_type: Mark
+  display_label: PayPal
+  mode: live
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

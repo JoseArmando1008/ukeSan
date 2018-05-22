@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - page_manager.page.home
+    - views.view.duplicate_of_featured_type_ukuleles
     - views.view.featured_type_ukuleles
     - views.view.featured_ukulele
   content:
@@ -21,7 +22,7 @@ variant_settings:
       id: 'views_block:featured_ukulele-block_1'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
       region: content
@@ -37,7 +38,7 @@ variant_settings:
       info: ''
       view_mode: full
       region: content
-      weight: 0
+      weight: 1
       uuid: db11e7bf-3532-4ac1-8305-815b69e75c39
       context_mapping: {  }
     50e9d240-cf51-4307-be3b-576d406e80cb:
@@ -48,8 +49,19 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 1
+      weight: 0
       uuid: 50e9d240-cf51-4307-be3b-576d406e80cb
+      context_mapping: {  }
+    2c45fb8a-4109-4c2e-89e7-7e919923c8cc:
+      id: 'views_block:duplicate_of_featured_type_ukuleles-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 2
+      uuid: 2c45fb8a-4109-4c2e-89e7-7e919923c8cc
       context_mapping: {  }
   id: panels_variant
   uuid: 170bf9d0-c423-4fa3-95f9-a391fdbb08c5

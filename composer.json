@@ -74,6 +74,9 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
+            "drupal/commerce": {
+                "https://www.drupal.org/project/commerce_paypal/issues/2873129": "https://www.drupal.org/files/issues/commerce_paypal-api_logging-2873129-5.patch"
+            },
             "drupal/page_manager": {
                 "https://www.drupal.org/project/page_manager/issues/2874851": "https://www.drupal.org/files/issues/page_manager-2874851-8.patch"
             }

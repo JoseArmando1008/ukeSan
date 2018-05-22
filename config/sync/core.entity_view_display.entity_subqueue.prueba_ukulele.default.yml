@@ -1,0 +1,20 @@
+uuid: 9316dd9c-e154-4dc1-bc53-d7655f17da5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.prueba_ukulele
+id: entity_subqueue.prueba_ukulele.default
+targetEntityType: entity_subqueue
+bundle: prueba_ukulele
+mode: default
+content:
+  items:
+    label: hidden
+    type: entity_reference_label
+    weight: 0
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }

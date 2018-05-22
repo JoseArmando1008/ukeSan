@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.carousel
     - field.storage.commerce_product.field_type
   module:
     - commerce
     - commerce_product
     - entityqueue
+    - flexslider_views
     - taxonomy
 id: featured_type_ukuleles
 label: 'Featured Type Ukuleles'
@@ -50,12 +52,11 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: html_list
         options:
           grouping:
             -
@@ -65,6 +66,9 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: 'entity:commerce_product'
       fields:
@@ -194,6 +198,50 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      title: 'Featured Type Ukuleles'
+      defaults:
+        title: false
+        style: false
+        row: false
+      style:
+        type: flexslider
+        options:
+          grouping: {  }
+          uses_fields: false
+          flexslider: null
+          optionset: ukelele_carousel
+          captionfield: ''
+          id: ''
+      row:
+        type: 'entity:commerce_product'
+        options:
+          relationship: none
+          view_mode: carousel
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:field.storage.commerce_product.field_type'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Categories
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: categories
+      menu:
+        type: 'default tab'
+        title: Categories
+        description: Categories
+        expanded: false
+        parent: ''
+        weight: 1
+        context: '1'
+        menu_name: main
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

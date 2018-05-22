@@ -1,26 +1,26 @@
-uuid: 0c87448f-74a0-42e9-965a-c27272394a90
+uuid: 7c2f2789-0c54-4451-b2f9-478da19dbac3
 langcode: en
 status: true
 dependencies: {  }
-id: featured_ukulele_carousel
-label: 'featured ukulele slider'
+id: ukelele_carousel
+label: 'ukelele carousel'
 options:
-  animation: fade
+  animation: slide
   animationSpeed: 600
   direction: horizontal
   slideshow: true
-  easing: swing
+  easing: linear
   smoothHeight: true
   reverse: false
-  slideshowSpeed: 5000
+  slideshowSpeed: 7000
   animationLoop: true
-  randomize: true
+  randomize: false
   startAt: 0
-  itemWidth: 250
-  itemMargin: 0
-  minItems: 1
-  maxItems: 1
-  move: 1
+  itemWidth: 5
+  itemMargin: 3
+  minItems: 3
+  maxItems: 3
+  move: 2
   directionNav: true
   controlNav: '0'
   thumbCaptions: false

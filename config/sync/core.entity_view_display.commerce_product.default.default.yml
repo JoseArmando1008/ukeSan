@@ -6,11 +6,15 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_price
+    - field.field.commerce_product.default.field_promo
     - field.field.commerce_product.default.field_type
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
     - image.style.thumbnail
   module:
+    - commerce_price
+    - commerce_product
     - image
     - text
 _core:
@@ -36,6 +40,15 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_price:
+    weight: 6
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
   field_type:
     weight: 1
     label: hidden
@@ -44,6 +57,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  stores:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   title:
     label: hidden
     type: string
@@ -53,14 +74,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   variations:
-    type: entity_reference_label
+    type: commerce_add_to_cart
     weight: 2
     region: content
     label: above
     settings:
-      link: true
+      combine: true
     third_party_settings: {  }
 hidden:
   created: true
-  stores: true
+  field_promo: true
   uid: true

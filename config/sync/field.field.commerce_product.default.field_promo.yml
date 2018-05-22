@@ -1,0 +1,21 @@
+uuid: ca245445-7969-4b36-9ddc-b8bbab3ef8b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_promo
+  module:
+    - commerce
+id: commerce_product.default.field_promo
+field_name: field_promo
+entity_type: commerce_product
+bundle: default
+label: promo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: 'commerce_plugin_item:commerce_promotion_offer'

@@ -7,6 +7,8 @@ dependencies:
     - core.entity_view_mode.commerce_product.carousel
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_image
+    - field.field.commerce_product.default.field_price
+    - field.field.commerce_product.default.field_promo
     - field.field.commerce_product.default.field_type
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
@@ -40,6 +42,8 @@ content:
 hidden:
   body: true
   created: true
+  field_price: true
+  field_promo: true
   field_type: true
   stores: true
   uid: true

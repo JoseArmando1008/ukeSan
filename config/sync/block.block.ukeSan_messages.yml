@@ -1,0 +1,22 @@
+uuid: 4bc05a82-3bd0-403a-8060-52cd6ad8e113
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ukeSan
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: ukeSan_messages
+theme: ukeSan
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

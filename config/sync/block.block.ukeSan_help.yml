@@ -1,0 +1,22 @@
+uuid: aca8373b-ce58-4212-9e1a-ce5ac2824095
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ukeSan
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: ukeSan_help
+theme: ukeSan
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

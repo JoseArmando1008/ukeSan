@@ -1,0 +1,25 @@
+uuid: 7db106f7-4eb1-4eda-a402-1ecf62b2841b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:9ed45002-fb5e-4540-b854-76c3bc2dbdce'
+  module:
+    - block_content
+  theme:
+    - ukeSan
+id: logo
+theme: ukeSan
+region: primary_menu
+weight: -8
+provider: null
+plugin: 'block_content:9ed45002-fb5e-4540-b854-76c3bc2dbdce'
+settings:
+  id: 'block_content:9ed45002-fb5e-4540-b854-76c3bc2dbdce'
+  label: logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

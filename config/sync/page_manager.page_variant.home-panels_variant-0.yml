@@ -6,7 +6,7 @@ dependencies:
     - page_manager.page.home
     - views.view.duplicate_of_featured_type_ukuleles
     - views.view.featured_type_ukuleles
-    - views.view.featured_ukulele
+    - views.view.slider
   content:
     - 'block_content:basic:3aaf7d1e-294a-4d97-83c0-044a5d69a473'
   module:
@@ -18,17 +18,6 @@ label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    f2d24bc6-1c70-4dd4-9d24-a2960608cfd3:
-      id: 'views_block:featured_ukulele-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: content
-      weight: -1
-      uuid: f2d24bc6-1c70-4dd4-9d24-a2960608cfd3
-      context_mapping: {  }
     db11e7bf-3532-4ac1-8305-815b69e75c39:
       id: 'block_content:3aaf7d1e-294a-4d97-83c0-044a5d69a473'
       label: History
@@ -63,6 +52,17 @@ variant_settings:
       weight: 2
       uuid: 2c45fb8a-4109-4c2e-89e7-7e919923c8cc
       context_mapping: {  }
+    a06c5b22-4b00-4a28-8039-e410a7ab0838:
+      id: 'views_block:slider-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: -1
+      uuid: a06c5b22-4b00-4a28-8039-e410a7ab0838
+      context_mapping: {  }
   id: panels_variant
   uuid: 170bf9d0-c423-4fa3-95f9-a391fdbb08c5
   label: null
@@ -74,7 +74,7 @@ variant_settings:
   storage_id: home-panels_variant-0
   builder: standard
 page: home
-weight: 0
+weight: -10
 selection_criteria: {  }
 selection_logic: and
 static_context: {  }

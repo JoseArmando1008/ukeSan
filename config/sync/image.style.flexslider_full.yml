@@ -12,5 +12,13 @@ effects:
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 800
-      height: 500
+      width: 1920
+      height: 400
+  c43e04f3-be47-4ca0-b607-bc5b99b7d98c:
+    uuid: c43e04f3-be47-4ca0-b607-bc5b99b7d98c
+    id: image_scale
+    weight: 2
+    data:
+      width: 1920
+      height: 400
+      upscale: true

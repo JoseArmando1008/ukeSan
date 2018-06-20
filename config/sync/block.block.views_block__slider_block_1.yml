@@ -1,0 +1,38 @@
+uuid: 36be77d2-6191-4af0-bb6e-810399b4d83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - ukeSan
+id: views_block__slider_block_1
+theme: ukeSan
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      slider: slider
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/*'
+    negate: false
+    context_mapping: {  }

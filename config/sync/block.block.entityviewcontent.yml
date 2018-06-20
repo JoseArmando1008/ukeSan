@@ -1,0 +1,38 @@
+uuid: 2643bac7-5149-4024-a38f-2c120b9aed8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+  theme:
+    - ukeSan
+id: entityviewcontent
+theme: ukeSan
+region: top_header
+weight: 0
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: 'Entity view (Content)'
+  provider: ctools
+  label_display: visible
+  view_mode: default
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      slider: slider
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      slider: slider
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

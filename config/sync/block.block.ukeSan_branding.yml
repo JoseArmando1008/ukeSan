@@ -1,6 +1,6 @@
 uuid: 4ae6d7aa-8b91-42e5-9493-9031fdf7883f
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: ukeSan_branding
 theme: ukeSan
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:

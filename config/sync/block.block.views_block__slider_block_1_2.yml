@@ -1,0 +1,24 @@
+uuid: 9eb16125-33dc-4284-b80f-c949547677b6
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - views
+  theme:
+    - ukeSan
+id: views_block__slider_block_1_2
+theme: ukeSan
+region: highlighted
+weight: -7
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

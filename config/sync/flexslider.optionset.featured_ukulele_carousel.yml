@@ -11,12 +11,12 @@ options:
   slideshow: true
   easing: swing
   smoothHeight: true
-  reverse: false
+  reverse: true
   slideshowSpeed: 5000
   animationLoop: true
-  randomize: true
+  randomize: false
   startAt: 0
-  itemWidth: 250
+  itemWidth: 0
   itemMargin: 0
   minItems: 1
   maxItems: 1
@@ -28,7 +28,7 @@ options:
   keyboard: true
   multipleKeyboard: false
   mousewheel: false
-  touch: true
+  touch: false
   prevText: Previous
   nextText: Next
   namespace: flex-
@@ -41,7 +41,7 @@ options:
   pausePlay: false
   pauseText: Pause
   playText: Play
-  pauseOnAction: true
+  pauseOnAction: false
   pauseOnHover: false
   controlsContainer: ''
   manualControls: ''

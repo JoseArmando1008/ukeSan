@@ -1,0 +1,30 @@
+uuid: 17a05e1b-b4dd-456e-b290-7a0718aac216
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.flexslider_full
+    - image.style.large
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_325x325
+    - image.style.max_650x650
+    - image.style.medium
+id: full_sizes
+label: 'Full sizes'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - max_1300x1300
+        - max_2600x2600
+        - max_325x325
+        - max_650x650
+        - medium
+breakpoint_group: responsive_image
+fallback_image_style: flexslider_full

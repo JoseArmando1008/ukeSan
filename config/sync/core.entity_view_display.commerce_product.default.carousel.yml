@@ -23,7 +23,7 @@ bundle: default
 mode: carousel
 content:
   field_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: flexslider_thumbnail
@@ -31,14 +31,6 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  title:
-    label: hidden
-    type: string
-    weight: 0
-    region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   body: true
   created: true
@@ -46,5 +38,6 @@ hidden:
   field_promo: true
   field_type: true
   stores: true
+  title: true
   uid: true
   variations: true

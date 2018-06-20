@@ -210,7 +210,6 @@ display:
         type: flexslider
         options:
           grouping: {  }
-          uses_fields: false
           flexslider: null
           optionset: ukelele_carousel
           captionfield: ''

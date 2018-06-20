@@ -1,0 +1,15 @@
+uuid: 8c3df05a-e49c-48f6-9849-0b70acb75b04
+langcode: en
+status: true
+dependencies: {  }
+name: carrousel
+label: Carrousel
+effects:
+  04fedccc-2128-428b-bf6c-9f7bae6dd26b:
+    uuid: 04fedccc-2128-428b-bf6c-9f7bae6dd26b
+    id: image_scale
+    weight: 1
+    data:
+      width: 120
+      height: 120
+      upscale: true

@@ -9,18 +9,18 @@ options:
   animationSpeed: 600
   direction: horizontal
   slideshow: true
-  easing: linear
+  easing: swing
   smoothHeight: true
   reverse: false
   slideshowSpeed: 7000
   animationLoop: true
   randomize: false
   startAt: 0
-  itemWidth: 5
-  itemMargin: 3
-  minItems: 3
+  itemWidth: 210
+  itemMargin: 0
+  minItems: 1
   maxItems: 3
-  move: 2
+  move: 1
   directionNav: true
   controlNav: '0'
   thumbCaptions: false

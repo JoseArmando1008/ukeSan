@@ -19,7 +19,7 @@ options:
   itemWidth: 210
   itemMargin: 0
   minItems: 1
-  maxItems: 3
+  maxItems: 4
   move: 1
   directionNav: true
   controlNav: '0'

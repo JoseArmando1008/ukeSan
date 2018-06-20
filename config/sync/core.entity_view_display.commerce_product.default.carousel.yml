@@ -12,7 +12,6 @@ dependencies:
     - field.field.commerce_product.default.field_type
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
-    - image.style.flexslider_thumbnail
   module:
     - image
 _core:
@@ -23,14 +22,22 @@ bundle: default
 mode: carousel
 content:
   field_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
-      image_style: flexslider_thumbnail
+      image_style: ''
       image_link: content
     third_party_settings: {  }
     type: image
     region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   body: true
   created: true
@@ -38,6 +45,5 @@ hidden:
   field_promo: true
   field_type: true
   stores: true
-  title: true
   uid: true
   variations: true

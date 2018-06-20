@@ -36,15 +36,21 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
-      {{ content }}
+<div class="container-fluid background-black history-cont-fluid">
+  <div class="jumbotron jumbotron-fluid history-jumbo background-black">
+    <div{{ attributes.addClass(classes) }}>
+      {{ title_prefix }}
+      {% if label %}
+        <h2{{ title_attributes }} {{ attributes.addClass('text-center text-white display-4') }}>{{ label }}</h2>
+      {% endif %}
+      {{ title_suffix }}
+      {% block content %}
+        <div{{ content_attributes.addClass('content container history-content-text') }}>
+          <br>
+          {{ content }}
+
+        </div>
+      {% endblock %}
     </div>
-  {% endblock %}
+  </div>
 </div>

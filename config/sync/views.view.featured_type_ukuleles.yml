@@ -234,7 +234,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: categories
+      path: store
       menu:
         type: 'default tab'
         title: Categories

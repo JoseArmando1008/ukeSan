@@ -73,6 +73,9 @@ display:
           row_class_custom: ''
       row:
         type: 'entity:commerce_product'
+        options:
+          relationship: none
+          view_mode: default
       fields:
         field_type:
           id: field_type
@@ -230,7 +233,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Categories
+    display_title: Store
     position: 2
     display_options:
       display_extenders: {  }

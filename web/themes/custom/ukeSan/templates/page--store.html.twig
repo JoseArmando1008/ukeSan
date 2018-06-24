@@ -94,7 +94,10 @@
           {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
+
             <a href="{{ url('<front>') }}"><img class="logoMenu" src="{{ directory }}/images/logo_blanco.png" alt="UkuLand"></a> {# MUYYYY IMPORTANTE#}
+
+
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="CollapsingNavbar">
                 {{ page.primary_menu }}

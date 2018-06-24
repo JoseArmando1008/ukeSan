@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributesattributes.addClass('carousel-article-mobile') }}>
+  {# {{- product|without('variation_attributes') -}} #}
+  {{product.field_image}}
+
+  <h5 class="carousel-article-uku-name">
+    {{product.title}}
+  </h5>
+  
+  {# {{product.field_price}} #}
+  {# {{ product.field_brand }}
+  {{ product.variation_field_product_variation_body }}
+  {{ product.variation_sku }} #}
+  {# {{ product.variations }} #}
+  {# {{product.field_promo}} #}
+  {# {{product.stores}} #}
+  {# {{product.field_type}} #}
+
+
+  {# {{ kint(product.variations | keys) }} #}
+</article>

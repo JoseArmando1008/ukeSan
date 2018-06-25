@@ -6,13 +6,13 @@ id: ukelele_carousel
 label: 'ukelele carousel'
 options:
   animation: slide
-  animationSpeed: 600
+  animationSpeed: 800
   direction: horizontal
   slideshow: true
-  easing: swing
+  easing: linear
   smoothHeight: true
   reverse: false
-  slideshowSpeed: 7000
+  slideshowSpeed: 4000
   animationLoop: true
   randomize: false
   startAt: 0
@@ -25,10 +25,10 @@ options:
   controlNav: '0'
   thumbCaptions: false
   thumbCaptionsBoth: false
-  keyboard: true
+  keyboard: false
   multipleKeyboard: false
   mousewheel: false
-  touch: true
+  touch: false
   prevText: Previous
   nextText: Next
   namespace: flex-
@@ -41,7 +41,7 @@ options:
   pausePlay: false
   pauseText: Pause
   playText: Play
-  pauseOnAction: true
+  pauseOnAction: false
   pauseOnHover: false
   controlsContainer: ''
   manualControls: ''

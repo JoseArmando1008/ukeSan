@@ -6,15 +6,15 @@ id: featured_ukulele_carousel
 label: 'featured ukulele slider'
 options:
   animation: fade
-  animationSpeed: 600
+  animationSpeed: 800
   direction: horizontal
   slideshow: true
-  easing: swing
+  easing: linear
   smoothHeight: true
-  reverse: true
-  slideshowSpeed: 5000
+  reverse: false
+  slideshowSpeed: 6000
   animationLoop: true
-  randomize: false
+  randomize: true
   startAt: 0
   itemWidth: 0
   itemMargin: 0

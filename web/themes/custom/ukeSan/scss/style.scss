@@ -10,7 +10,7 @@ Description: Bootstrap 4 with Sass
 -------------------------------------------------*/
 
 body {
-    background: $white;
+    background: #fafafa;
     overflow-x: hidden; 
 }
 
@@ -40,6 +40,8 @@ a {
 
 .menu--main li a {
     color: $white-font-footer;
+    font-size: 18px;
+    font-family: $font-menu;
 }
 
 .menu--account li a {

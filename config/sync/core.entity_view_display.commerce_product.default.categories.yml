@@ -14,7 +14,6 @@ dependencies:
     - field.field.commerce_product.default.variations
     - image.style.medium
   module:
-    - commerce_price
     - image
 _core:
   default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
@@ -25,40 +24,27 @@ mode: categories
 content:
   field_image:
     type: image
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings:
       image_style: medium
       image_link: content
     third_party_settings: {  }
-  field_price:
-    type: commerce_price_plain
-    weight: 3
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_type:
     type: entity_reference_label
     weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
       link: true
-    third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: 1
-    region: content
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
 hidden:
   body: true
   created: true
+  field_price: true
   field_promo: true
   stores: true
+  title: true
   uid: true
   variations: true

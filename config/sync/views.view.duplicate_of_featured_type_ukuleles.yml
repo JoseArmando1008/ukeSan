@@ -210,7 +210,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      title: 'Featured Type Ukuleles'
+      title: Categories
       defaults:
         title: false
         style: false

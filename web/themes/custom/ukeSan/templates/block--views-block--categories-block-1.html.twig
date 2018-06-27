@@ -34,19 +34,21 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    'container-fluid'
   ]
 %}
-
-<div{{ attributes.addClass(classes,'title-categories') }}>
+<div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+    <h2{{ title_attributes }} {{ attributes.addClass('text-center text-dark display-4') }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('content container') }}>
-      {{content}}
+      <br>
+      <div class="row" }}>
+        {{ content }}
+      </div>
     </div>
   {% endblock %}
 </div>
-

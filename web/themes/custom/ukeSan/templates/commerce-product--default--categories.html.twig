@@ -19,12 +19,10 @@
  * @ingroup themeable
  */
 #}
-
+<article{{ attributes }}>
   {# {{- product|without('variation_attributes') -}} #}
-  {# {{product.field_image}}
-  {{product.title}}
-  {{ product.variation_price }}
-  {{product.variations}} #}
+  {{product.field_image}}
+  {{product.field_type}}
   
   {# {{product.field_price}} #}
   {# {{ product.field_brand }}
@@ -35,20 +33,6 @@
   {# {{product.stores}} #}
   {# {{product.field_type}} #}
 
-  <div class="card text-center">
-    <div class="card-header card-header-custom">
-    {# Revisar!!! #}
-      <a href="{{ product_url }}"><img src="{{ file_url(product.field_image['#items'].entity.uri.value) }}" {{ attributes.addClass('card-img-top card-img-width') }}> </a>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">{{product.title}}</h5>
-    </div>
-    <div class="card-footer text-muted card-footer-custom">
-      {{ product.variation_price }}
-      {{ product.variations }}
-    </div>
-</div>
-
 
   {# {{ kint(product.variations | keys) }} #}
-
+</article>

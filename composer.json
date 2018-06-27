@@ -29,6 +29,8 @@
         "drupal/flexslider": "^2.0@beta",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.3",
+        "drupal/product_taxonomy_filter": "1.x-dev",
+        "drupal/social_icons": "^1.0",
         "drush/drush": "^9.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

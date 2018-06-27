@@ -1,0 +1,24 @@
+uuid: 732cf690-d417-47ee-811e-2ddbc36675ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.categories_ukelele
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product.variations
+id: commerce_product.categories_ukelele.variations
+field_name: variations
+entity_type: commerce_product
+bundle: categories_ukelele
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - default
+field_type: entity_reference

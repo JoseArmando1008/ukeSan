@@ -51,12 +51,14 @@ module:
   page_manager_ui: 0
   panels: 0
   path: 0
+  product_taxonomy_filter: 0
   profile: 0
   quickedit: 0
   rdf: 0
   responsive_image: 0
   search: 0
   shortcut: 0
+  social_icons: 0
   state_machine: 0
   system: 0
   taxonomy: 0

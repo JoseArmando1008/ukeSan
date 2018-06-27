@@ -1,0 +1,11 @@
+uuid: 3eb44911-343c-4565-8da9-275837490116
+langcode: en
+status: true
+dependencies: {  }
+id: categories_ukelele
+label: 'Categories Ukelele'
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
+locked: false

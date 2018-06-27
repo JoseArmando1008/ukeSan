@@ -1,0 +1,28 @@
+uuid: 3f224f4b-86f6-4b81-bb07-975c9f94b021
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_icons
+  theme:
+    - ukeSan
+id: socialicons
+theme: ukeSan
+region: footer_first
+weight: -8
+provider: null
+plugin: social_icons_block
+settings:
+  id: social_icons_block
+  label: 'Social Icons'
+  provider: social_icons
+  label_display: visible
+  facebook_icon: 'https://www.facebook.com/Mandoinuzuka'
+  twitter_icon: 'https://twitter.com/JoseArm12606876'
+  google_plus_icon: ''
+  instragram_icon: 'https://www.instagram.com/mandoinuzuka/'
+  telegram_icon: ''
+  linkedin_icon: ''
+  pinterest_icon: ''
+  youtube_icon: ''
+visibility: {  }

@@ -5,12 +5,12 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.default
     - core.entity_view_mode.commerce_product.featured
+    - entityqueue.entity_queue.prueba_ukulele
   module:
     - commerce
     - commerce_product
     - entityqueue
     - flexslider_views
-    - taxonomy
 id: featured_ukulele
 label: 'Featured Ukulele'
 module: views
@@ -161,25 +161,16 @@ display:
       footer: {  }
       empty: {  }
       relationships:
-        field_type:
-          id: field_type
-          table: commerce_product__field_type
-          field: field_type
-          relationship: none
-          group_type: group
-          admin_label: 'field_type: Taxonomy term'
-          required: true
-          plugin_id: standard
         entityqueue_relationship:
           id: entityqueue_relationship
-          table: taxonomy_term_field_data
+          table: commerce_product_field_data
           field: entityqueue_relationship
-          relationship: field_type
+          relationship: none
           group_type: group
-          admin_label: 'Taxonomy term queue'
+          admin_label: 'Product queue'
           required: true
-          limit_queue: null
-          entity_type: taxonomy_term
+          limit_queue: prueba_ukulele
+          entity_type: commerce_product
           plugin_id: entity_queue
       arguments: {  }
       display_extenders: {  }
@@ -188,7 +179,10 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.prueba_ukulele'
+        - entity_field_info
+        - views_data
   block_1:
     display_plugin: block
     id: block_1
@@ -201,4 +195,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.prueba_ukulele'
+        - entity_field_info
+        - views_data

@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: ukulele
-label: Design
+label: Brand
 elementType: select

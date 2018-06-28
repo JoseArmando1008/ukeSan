@@ -138,7 +138,13 @@
               <main{{ content_attributes }}>
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
+                  <div class="container">
+                    <div class="row align-items-center justify-content-center" style="padding-top:10%;">
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 align-self-center offset-lg-2 offset-xl-2">
+                        {{ page.content }}
+                      </div>
+                    </div>
+                  </div>
                 </section>
               </main>
             {% if page.sidebar_first %}

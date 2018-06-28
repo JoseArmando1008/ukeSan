@@ -19,6 +19,7 @@
  * @ingroup themeable
  */
 #}
-<div class="col">
-  {{product.field_type_image}}
+<div class="categories-div">
+  <div class="categories-div-type">{{ product.field_type }}</div>
+  <img src="{{ file_url(product.field_type_image['#items'].entity.uri.value) }}" {{ attributes.addClass('img-fluid, imagen-categories') }}>
 </div>

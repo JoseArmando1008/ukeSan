@@ -30,6 +30,7 @@
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.3",
         "drupal/product_taxonomy_filter": "1.x-dev",
+        "drupal/search_api": "^1.8",
         "drupal/social_icons": "^1.0",
         "drush/drush": "^9.2",
         "vlucas/phpdotenv": "^2.4",
